@@ -21,7 +21,7 @@ Visualization: We’ll use graphs to explore trends and patterns in customer beh
 Statistical Analysis: This will help us find correlations between different features and churn rates.
 Model Selection
 
-Algorithms: We’ll experiment with different machine learning algorithms, including logistic regression, decision trees, random forests, and gradient boosting.
+Algorithms: We’ll experiment with different machine learning algorithms, including logistic regression and decision trees.
 
 Performance Metrics: To evaluate how well our models perform, we’ll look at metrics like accuracy, precision, recall, and F1-score.
 Model Training and Validation
@@ -39,10 +39,6 @@ Increased Retention Rates: By proactively addressing churn, businesses can boost
 
 Data-Driven Decisions: We’ll provide actionable insights for marketing and customer service teams.
 Enhanced Customer Understanding: The project will help us gain a deeper understanding of customer needs and behaviors.
-
-## Conclusion
-
-This project aims to harness data analytics and machine learning to effectively predict customer churn, empowering businesses to take strategic actions to retain their valuable customers. By focusing on data-driven insights, organizations can build stronger relationships and improve profitability.
 
 ## Dataset Overview
 
@@ -137,3 +133,87 @@ Timestamp: When the data was recorded for the customer.
 ## Feature Enhancement
 
 To improve the performance of our machine learning algorithms, particularly logistic regression and random forest, we will create additional features to better capture customer behaviors and tendencies.
+
+## Conclusion
+
+This project aims to harness data analytics and machine learning to effectively predict customer churn, empowering businesses to take strategic actions to retain their valuable customers. By focusing on data-driven insights, organizations can build stronger relationships and improve profitability.
+
+The key factors influencing customer churn from the data are as follows:
+Number of service interactions (calls, emails, chats)
+
+Frequency of late payments
+
+Time spent on the company’s website
+
+Customer Net Promoter Score (NPS), indicating loyalty and satisfaction.
+
+Model Comparison: Logistic Regression vs. Decision Tree
+
+
+
+Logistic Regression Metrics:
+
+Train Accuracy: 97.1%
+
+Train Precision: 97.7%
+
+Train Recall: 96.6%
+
+Train F1 Score: 97.1%
+
+Validation Accuracy: 96.8%
+
+Validation Precision: 96.4%
+
+Validation Recall: 96.9%
+
+Validation F1 Score: 96.7%
+
+Test Accuracy: 96.9%
+
+Test Precision: 97.3%
+
+Test Recall: 96.4%
+
+Test F1 Score: 96.9%
+
+
+
+
+Decision Tree Metrics:
+Train Accuracy: 97.7%
+
+Train Precision: 97.8%
+
+Train Recall: 97.7%
+
+Train F1 Score: 97.7%
+
+Validation Accuracy: 96.7%
+
+Validation Precision: 96.2%
+
+Validation Recall: 96.9%
+
+Validation F1 Score: 96.6%
+
+Test Accuracy: 97.3%
+
+Test Precision: 97.4%
+
+Test Recall: 97.3%
+
+Test F1 Score: 97.3%
+
+
+
+Summary of Findings:
+Training Set: The decision tree outperforms logistic regression in accuracy, precision, recall, and F1 score.
+
+Validation Set: Logistic regression has slightly higher accuracy and recall, but the decision tree remains competitive.
+
+Test Set: Both models perform well, but the decision tree has higher accuracy, precision, recall, and F1 score.
+
+
+Overall Assessment:
+Overall, the decision tree model performed better across most metrics, especially on the training and test sets, indicating strong generalization and reliability in predictions.
