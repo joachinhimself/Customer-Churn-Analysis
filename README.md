@@ -148,7 +148,11 @@ Time spent on the company’s website
 Customer Net Promoter Score (NPS), indicating loyalty and satisfaction.
 
 Model Comparison: Logistic Regression vs. Decision Tree
+
+
+
 Logistic Regression Metrics:
+
 Train Accuracy: 97.1%
 
 Train Precision: 97.7%
@@ -172,6 +176,9 @@ Test Precision: 97.3%
 Test Recall: 96.4%
 
 Test F1 Score: 96.9%
+
+
+
 
 Decision Tree Metrics:
 Train Accuracy: 97.7%
@@ -198,6 +205,8 @@ Test Recall: 97.3%
 
 Test F1 Score: 97.3%
 
+
+
 Summary of Findings:
 Training Set: The decision tree outperforms logistic regression in accuracy, precision, recall, and F1 score.
 
@@ -205,5 +214,6 @@ Validation Set: Logistic regression has slightly higher accuracy and recall, but
 
 Test Set: Both models perform well, but the decision tree has higher accuracy, precision, recall, and F1 score.
 
-Conclusion:
+
+Overall Assessment:
 Overall, the decision tree model performed better across most metrics, especially on the training and test sets, indicating strong generalization and reliability in predictions.
