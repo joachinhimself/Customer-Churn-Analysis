@@ -46,7 +46,7 @@ Model Selection
 
 ## Dataset Overview
 
-**Columns
+- **Columns
 
 - **CustomerID:** A unique identifier for each customer.
 
@@ -54,7 +54,7 @@ Model Selection
 
 - **Age:** The customer’s age.
 
--**Gender:** The customer’s gender.
+- **Gender:** The customer’s gender.
 
 - **Location:** The city or area where the customer resides.
 
@@ -140,72 +140,78 @@ To improve the performance of our machine learning algorithms, particularly logi
 
 ### Conclusion
 
-The key factors influencing customer churn from the data include:
+The analysis of customer churn reveals critical insights based on various predictive models. Below is a structured overview of the models evaluated, including their train, validation, and test scores:
 
-- **Number of service interactions (calls, emails, chats)
-- **Frequency of late payments
-- **Time spent on the company’s website
-- **Customer Net Promoter Score (NPS), indicating loyalty and satisfaction.
-
-### Model Comparison: Random Forest, Decision Tree, and Logistic Regression
-
-**Random Forest Metrics:**
-
-- **Train Accuracy**: 99.9%
-- **Train Precision**: 100%
-- **Train Recall**: 99.9%
-- **Train F1 Score**: 99.9%
-
-- **Validation Accuracy**: 96.8%
-- **Validation Precision**: 96.4%
-- **Validation Recall**: 96.9%
-- **Validation F1 Score**: 96.7%
-
-- **Test Accuracy**: 97.36%
-- **Test Precision**: 97.36%
-- **Test Recall**: 97.36%
-- **Test F1 Score**: 97.36%
-
-**Decision Tree Metrics:**
-
-- **Train Accuracy**: 97.7%
-- **Train Precision**: 97.8%
-- **Train Recall**: 97.7%
-- **Train F1 Score**: 97.7%
-
-- **Validation Accuracy**: 96.7%
-- **Validation Precision**: 96.2%
-- **Validation Recall**: 96.9%
-- **Validation F1 Score**: 96.6%
-
-- **Test Accuracy**: 97.3%
-- **Test Precision**: 97.4%
-- **Test Recall**: 97.3%
-- **Test F1 Score**: 97.3%
-
-**Logistic Regression Metrics:**
+#### Logistic Regression Metrics:
 
 - **Train Accuracy**: 97.1%
 - **Train Precision**: 97.7%
 - **Train Recall**: 96.6%
 - **Train F1 Score**: 97.1%
-
 - **Validation Accuracy**: 96.8%
 - **Validation Precision**: 96.4%
 - **Validation Recall**: 96.9%
 - **Validation F1 Score**: 96.7%
-
 - **Test Accuracy**: 96.9%
 - **Test Precision**: 97.3%
 - **Test Recall**: 96.4%
 - **Test F1 Score**: 96.9%
 
-### Summary of Findings
+#### Decision Tree Metrics:
 
-- **Training Set:** The Random Forest model significantly outperforms both the Decision Tree and Logistic Regression in accuracy, precision, recall, and F1 score.
-- **Validation Set:** Logistic Regression and Random Forest perform comparably, with Random Forest showing slightly higher precision.
-- **Test Set:** The Random Forest model demonstrates superior performance across all metrics compared to both the Decision Tree and Logistic Regression.
+- **Train Accuracy**: 97.7%
+- **Train Precision**: 97.8%
+- **Train Recall**: 97.7%
+- **Train F1 Score**: 97.7%
+- **Validation Accuracy**: 96.7%
+- **Validation Precision**: 96.2%
+- **Validation Recall**: 96.9%
+- **Validation F1 Score**: 96.6%
+- **Test Accuracy**: 97.3%
+- **Test Precision**: 97.4%
+- **Test Recall**: 97.3%
+- **Test F1 Score**: 97.3%
 
-### Overall Assessment
+#### Random Forest Metrics:
 
-In conclusion, the Random Forest model exhibits strong generalization and reliability in its predictions, outperforming the Decision Tree and Logistic Regression across most evaluation metrics. Its high accuracy and precision indicate that it is well-suited for predicting customer churn effectively.
+- **Train Accuracy**: 99.9%
+- **Train Precision**: 100%
+- **Train Recall**: 99.9%
+- **Train F1 Score**: 99.9%
+- **Validation Accuracy**: 96.8%
+- **Validation Precision**: 96.4%
+- **Validation Recall**: 96.9%
+- **Validation F1 Score**: 96.7%
+- **Test Accuracy**: 97.36%
+- **Test Precision**: 97.36%
+- **Test Recall**: 97.36%
+- **Test F1 Score**: 97.36%
+
+#### Gradient Boosting Metrics:
+
+- **Train Accuracy**: 97.8%
+- **Train Precision**: 97.5%
+- **Train Recall**: 97.5%
+- **Train F1 Score**: 97.3%
+- **Validation Accuracy**: 96.8%
+- **Validation Precision**: 96.4%
+- **Validation Recall**: 96.9%
+- **Validation F1 Score**: 96.7%
+- **Test Accuracy**: 97.25%
+- **Test Precision**: 97.48%
+- **Test Recall**: 97.48%
+- **Test F1 Score**: 97.25%
+
+### Observations
+
+1. **Logistic Regression**: This model performs well with high accuracy and precision, though it shows slightly lower recall, indicating it may miss some positive cases which are critical for churn prediction.
+
+2. **Decision Tree**: The decision tree demonstrates a strong balance between complexity and interpretability, achieving solid accuracy and F1 scores. However, it may be prone to overfitting, as evidenced by the high training metrics compared to validation.
+
+3. **Random Forest**: This ensemble model exhibits exceptional performance across all metrics, particularly in training accuracy and precision. Its ability to maintain high validation and test scores highlights its robustness and effectiveness in predicting customer churn.
+
+4. **Gradient Boosting**: This model shows competitive performance, with strong metrics across the board. Its ability to refine predictions from weak learners makes it a valuable option for capturing complex patterns in the data.
+
+### Final Conclusion
+
+In summary, both the Random Forest and Gradient Boosting models demonstrate outstanding performance, making them highly suitable for predicting customer churn. Their high accuracy, precision, and recall indicate their reliability and effectiveness, providing valuable insights for targeted interventions to enhance customer retention. While Logistic Regression and Decision Tree models are effective, they show slightly lower performance metrics. However, they can still serve as useful alternatives based on the need for interpretability and model simplicity. Overall, the insights derived from these models can significantly inform strategies to mitigate churn and improve customer loyalty.
